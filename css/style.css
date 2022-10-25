@@ -379,7 +379,6 @@ img {
 }
 
 .svg-item {
-
   background-color: var(--color-white-dark);
   width: 70px;
   height: 70px;
@@ -394,13 +393,14 @@ img {
 
 .box-info-background {
   display: block;
-/* margin-left: 50px;
+  /* margin-left: 50px;
   width: 180px;
   height: 120px; */
   background-color: var(--color-white-dark);
 }
 
 .box-info-karta {
+  display: block;
 }
 
 .socjal-links {
