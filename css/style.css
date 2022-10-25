@@ -28,28 +28,34 @@ p,
 ul {
   margin: 0;
 }
-ul, ol {
+ul,
+ol {
   margin: 0;
   padding: 0;
 }
-  /* img są elementami liniowymi  ale  lepiej zmianć od razu na blokowe */
+/* img są elementami liniowymi  ale  lepiej zmianć od razu na blokowe */
 img {
   display: block;
 }
 
+.container-big {
+  width: 1600px;
+  height: 600px;
+}
+/* 
+.container-big {
+  margin: 0 auto;
+  height: auto;
+} */
 
 .container {
   margin: 0 auto;
   width: 100%;
   max-width: 1200px;
 }
+
 .section {
   padding: 94px 0px 94px 0px;
-}
-
-.container-big {
-  margin: 0 auto;
-  height: auto;
 }
 
 .container-work {
@@ -84,6 +90,7 @@ img {
   border-bottom: 2px solid #ececec;
   padding: 32px;
 }
+
 .margin-button {
   padding-bottom: 50px;
 }
@@ -158,48 +165,34 @@ img {
 }
 
 .banner-background {
-  margin-top: 30px;
+  margin: auto;
   background-color: #2f303a;
   text-align: center;
-  width: 100%;
-  height: 400px;
-  /* wiem  powinno być height: 600px; ale narazie głupio wygląda :) */
-  padding-top: 100px;
-  padding-bottom: 100px;
+  width: 1600px;
+  height: 600px;
   color: var(--color-white);
   background-size: cover;
- background-image: url(../images/banner-agencja.jpg);
+  background-image: url(../images/banner-agencja.jpg);
+  object-fit: cover;
+  box-shadow: inset 50px 50px 50px 50px rgba(47, 48, 58, 0.4),
+    inset 1600px 600px 50px 50px rgba(47, 48, 58, 0.4);
 }
 
 .banner-background-team {
   background-color: var(--color-white-dark);
-
+  /* dlaczego vsc kazał zrobić puste linie w css ? */
   display: flex;
   align-items: center;
   justify-content: space-between;
-
+  /* dlaczego vsc kazał zrobić puste linie w css ? */
   color: var(--color-white);
 }
 
 .title-banner {
   font-size: 46px;
   line-height: 1.6;
+  padding-top: 200px;
 }
-
-/* .button {
-  display: inline-block;
-  height: 38px;
-  margin: 8px;
-  padding: 6px 22px 6px 22px;
-  background-color: var(--color-white-dark);
-  color: var(--color-black);
-  border: none;
-  font-size: 16px;
-  text-align: center;
-  text-decoration: none;
-  cursor: pointer;
-  border-radius: 5px;
-} */
 
 .button {
   display: inline-block;
@@ -215,8 +208,8 @@ img {
 }
 
 .button:hover {
- transform: scale( 1.1);
- transition: 2s;
+  transform: scale(1.1);
+  transition: 2s;
 }
 
 .button-list {
@@ -262,9 +255,8 @@ img {
   flex-wrap: wrap;
   gap: calc((100%- 60px) / 3);
   /* column-gap: calc((100%- 60px) / 3); */
-border-top: 1px solid transparent;
+  border-top: 1px solid transparent;
 }
-
 
 .portfolio-item {
   display: inline-block;
@@ -291,15 +283,6 @@ border-top: 1px solid transparent;
   border-radius: 5px;
   margin: 15px;
 }
-.socjal-links {
-  display: flex;
- justify-content: space-evenly;
-}
-
-.socjal-links-icon:hover {
- transform: scaleX(1.1);
- transition: 50ms;
-}
 
 .drop-shadow {
   width: 150px;
@@ -325,12 +308,14 @@ border-top: 1px solid transparent;
 }
 
 .box-info-title {
+  margin-top: 30px;
   font-size: 14px;
   font-weight: 700;
   color: var(--color-black);
 }
 
 .box-info {
+  margin-top: 6px;
   font-size: 14px;
   color: var(--color-grey);
 }
@@ -354,4 +339,83 @@ border-top: 1px solid transparent;
 .address {
   font-size: 14px;
   margin-top: 20px;
+}
+
+/* style do ikonz svg */
+/* .icon {
+  display: inline-block;
+  width: 1em;
+  height: 1em;
+  stroke-width: 0;
+  stroke: currentColor;
+  fill: currentColor;
+} */
+
+.category-box {
+  display: flex;
+  width: 1171px;
+  height: 251px;
+  margin: auto;
+}
+
+.category-prezentation {
+  display: flex;
+  width: 270px;
+  height: 247px;
+}
+
+.category-jobs {
+  margin: 20px;
+}
+
+.category-svg-icon {
+  display: block;
+  /* margin: 25px; */
+}
+
+.kafelek {
+  margin: 15px;
+  width: 270px;
+}
+
+.svg-item {
+
+  background-color: var(--color-white-dark);
+  width: 70px;
+  height: 70px;
+  /* outline: 2px dashed #2a2a2a; */
+  margin: 25px 100px;
+}
+
+/*   na use nie dam rady nic zrobić  
+.use-item {
+  margin: auto;
+} */
+
+.box-info-background {
+  display: block;
+/* margin-left: 50px;
+  width: 180px;
+  height: 120px; */
+  background-color: var(--color-white-dark);
+}
+
+.box-info-karta {
+}
+
+.socjal-links {
+  display: flex;
+  align-content: space-between;
+  /* width: 250px; */
+  /* height: 40px; */
+  /* background-color: grey; */
+}
+
+.svg-item-socjal {
+  background-color: var(--color-white-dark);
+  width: 30px;
+  height: 30px;
+  align-content: space-around;
+  /* outline: 2px dashed #2a2a2a; */
+  /* margin: 25px 100px; */
 }
