@@ -53,6 +53,42 @@ img {
   width: 100%;
   max-width: 1200px;
 }
+.container-klients {
+  width: 1200px;
+  /* width: 100%; */
+  box-sizing: border-box;
+  margin: 0 auto;
+  justify-content: space-between;
+  align-items: center;
+  gap: 30px;
+  padding: 0px 15px;
+  /* margin: 94px 215px 0px; */
+}
+.client-box {
+  display: flex;
+  justify-content: space-between;
+  align-content: center;
+  align-items: center;
+  gap: 30px;
+  padding: 7px;
+  fill: #afb1b8;
+  padding: 8px 7px;
+}
+
+.client-box-size {
+  align-content: center;
+  justify-content: center;
+  border: 1px solid #afb1b8;
+  border-radius: 4px;
+  width: 170px;
+  height: 92px;
+  padding: 16px 32px;
+  color: #afb1b8;
+}
+
+.client-box-size:hover {
+  border-color: var(--hover-color);
+}
 
 .section {
   padding: 94px 0px 94px 0px;
@@ -99,7 +135,7 @@ img {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  /* margin-bottom: 30px; */
+  margin-bottom: 30px;
 }
 
 .button-kategory {
@@ -151,6 +187,12 @@ img {
   text-decoration: none;
   font-size: 14px;
   color: var(--hover-color);
+}
+
+/* nie działa jeszcze  */
+.envelope:hover,
+.phone:hover {
+  fill: var(--hover-color);
 }
 
 .kontakt {
@@ -336,6 +378,26 @@ img {
   padding: 60px 10px 30px 90px;
 }
 
+.footer-display {
+  display: flex;
+  justify-content: left;
+  margin: 0 auto;
+  gap: 0;
+}
+
+.footer-display-socjal {
+  margin-left: 50px;
+}
+h3 {
+  margin-top: -20px;
+  margin-bottom: 20px;
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  color: #ffffff;
+}
+
 .address {
   font-size: 14px;
   margin-top: 20px;
@@ -400,7 +462,6 @@ img {
 }
 
 .box-info-karta {
-
 }
 
 .socjal-links {
@@ -411,11 +472,83 @@ img {
   /* background-color: grey; */
 }
 
+.socjal-links-center {
+  align-content: center;
+}
+/*  */
+
+/* za cholere nie moge tego wycentrować  */
+/*  */
+
 .svg-item-socjal {
   background-color: var(--color-white-dark);
   width: 30px;
   height: 30px;
-  align-content: space-around;
+  margin: 5px;
+  margin-left: 25px;
+  align-content: center;
   /* outline: 2px dashed #2a2a2a; */
   /* margin: 25px 100px; */
+}
+.svg-item-socjal-box {
+  background-color: var(--color-white-dark);
+  /* width: 30px;
+  height: 30px; */
+  /* align-content: space-around; */
+  /* outline: 2px dashed #2a2a2a; */
+  /* margin: 25px 100px; */
+}
+
+/* to sobie testuje   */
+
+.list {
+  list-style: none;
+  display: flex;
+  padding: 0px;
+  margin: 0px;
+  gap: 30px;
+}
+.icon-sm-box {
+  display: flex;
+  justify-content: space-between;
+  width: 206px;
+  height: 56px;
+  margin: 0 auto;
+}
+.icon-box-socjal {
+  width: 44px;
+  height: 44px;
+  padding: 12px;
+}
+
+/* to bedzie dobre  do nastepnych ikon */
+/* .svg-client-box-size {
+  align-content: center;
+  justify-content: center;
+  border: 1px solid #afb1b8;
+  border-radius: 4px;
+  width: 170px;
+  height: 92px;
+  padding: 16px 32px;
+  color: #afb1b8;
+} */
+
+/* .svg-icon-client {
+  width: 106px;
+  height: 60px;
+  align-items: center;
+  align-content: center;
+  justify-self: center;
+  color: #afb1b8;
+} */
+
+.icon-client {
+  align-items: center;
+  align-content: center;
+  justify-self: center;
+  color: #afb1b8;
+}
+
+.icon-client::hover {
+  fill: var(--hover-color);
 }
