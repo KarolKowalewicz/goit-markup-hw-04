@@ -1,6 +1,3 @@
-/*    lepiej tego nie robić
- *,*::after,*::before {margin: 0;padding: 0;} */
-
 :root {
   --color-black: #212121;
   --color-white: #ffffff;
@@ -27,71 +24,21 @@ h6,
 p,
 ul {
   margin: 0;
-}
-ul,
-ol {
-  margin: 0;
   padding: 0;
 }
-/* img są elementami liniowymi  ale  lepiej zmianć od razu na blokowe */
-img {
-  display: block;
-}
-
-.container-big {
-  width: 1600px;
-  height: 600px;
-}
-/* 
-.container-big {
-  margin: 0 auto;
-  height: auto;
-} */
 
 .container {
   margin: 0 auto;
   width: 100%;
   max-width: 1200px;
 }
-.container-klients {
-  width: 1200px;
-  /* width: 100%; */
-  box-sizing: border-box;
-  margin: 0 auto;
-  justify-content: space-between;
-  align-items: center;
-  gap: 30px;
-  padding: 0px 15px;
-  /* margin: 94px 215px 0px; */
-}
-.client-box {
-  display: flex;
-  justify-content: space-between;
-  align-content: center;
-  align-items: center;
-  gap: 30px;
-  padding: 7px;
-  fill: #afb1b8;
-  padding: 8px 7px;
-}
-
-.client-box-size {
-  align-content: center;
-  justify-content: center;
-  border: 1px solid #afb1b8;
-  border-radius: 4px;
-  width: 170px;
-  height: 92px;
-  padding: 16px 32px;
-  color: #afb1b8;
-}
-
-.client-box-size:hover {
-  border-color: var(--hover-color);
-}
-
 .section {
   padding: 94px 0px 94px 0px;
+}
+
+.container-big {
+  margin: 0 auto;
+  height: auto;
 }
 
 .container-work {
@@ -126,7 +73,6 @@ img {
   border-bottom: 2px solid #ececec;
   padding: 32px;
 }
-
 .margin-button {
   padding-bottom: 50px;
 }
@@ -135,7 +81,7 @@ img {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  margin-bottom: 30px;
+  /* margin-bottom: 30px; */
 }
 
 .button-kategory {
@@ -189,12 +135,6 @@ img {
   color: var(--hover-color);
 }
 
-/* nie działa jeszcze  */
-.envelope:hover,
-.phone:hover {
-  fill: var(--hover-color);
-}
-
 .kontakt {
   text-decoration: none;
   color: var(--color-grey);
@@ -207,34 +147,46 @@ img {
 }
 
 .banner-background {
-  margin: auto;
+  margin-top: 30px;
   background-color: #2f303a;
   text-align: center;
-  width: 1600px;
-  height: 600px;
+  width: 100%;
+  height: 400px;
+  /* wiem  powinno być height: 600px; ale narazie głupio wygląda :) */
+  background-image: url(../images/Header.png);
+  padding-top: 100px;
+  padding-bottom: 100px;
   color: var(--color-white);
-  background-size: cover;
-  background-image: url(../images/banner-agencja.jpg);
-  object-fit: cover;
-  box-shadow: inset 50px 50px 50px 50px rgba(47, 48, 58, 0.4),
-    inset 1600px 600px 50px 50px rgba(47, 48, 58, 0.4);
 }
 
 .banner-background-team {
   background-color: var(--color-white-dark);
-  /* dlaczego vsc kazał zrobić puste linie w css ? */
+
   display: flex;
   align-items: center;
   justify-content: space-between;
-  /* dlaczego vsc kazał zrobić puste linie w css ? */
   color: var(--color-white);
 }
 
 .title-banner {
   font-size: 46px;
   line-height: 1.6;
-  padding-top: 200px;
 }
+
+/* .button {
+  display: inline-block;
+  height: 38px;
+  margin: 8px;
+  padding: 6px 22px 6px 22px;
+  background-color: var(--color-white-dark);
+  color: var(--color-black);
+  border: none;
+  font-size: 16px;
+  text-align: center;
+  text-decoration: none;
+  cursor: pointer;
+  border-radius: 5px;
+} */
 
 .button {
   display: inline-block;
@@ -250,8 +202,8 @@ img {
 }
 
 .button:hover {
-  transform: scale(1.1);
-  transition: 2s;
+ transform: scale( 1.1);
+ transition: 2s;
 }
 
 .button-list {
@@ -297,8 +249,9 @@ img {
   flex-wrap: wrap;
   gap: calc((100%- 60px) / 3);
   /* column-gap: calc((100%- 60px) / 3); */
-  border-top: 1px solid transparent;
+border-top: 1px solid transparent;
 }
+
 
 .portfolio-item {
   display: inline-block;
@@ -318,7 +271,7 @@ img {
   flex-direction: column;
   align-items: center;
   width: 270px;
-  height: 428px;
+  height: 368px;
   text-align: center;
   border: 1px solid rgba(117, 117, 117, 0.5);
   box-shadow: 0 5px 10px -2px rgba(117, 96, 96, 0);
@@ -350,14 +303,12 @@ img {
 }
 
 .box-info-title {
-  margin-top: 30px;
   font-size: 14px;
   font-weight: 700;
   color: var(--color-black);
 }
 
 .box-info {
-  margin-top: 6px;
   font-size: 14px;
   color: var(--color-grey);
 }
@@ -378,177 +329,17 @@ img {
   padding: 60px 10px 30px 90px;
 }
 
-.footer-display {
-  display: flex;
-  justify-content: left;
-  margin: 0 auto;
-  gap: 0;
-}
-
-.footer-display-socjal {
-  margin-left: 50px;
-}
-h3 {
-  margin-top: -20px;
-  margin-bottom: 20px;
-  font-family: 'Roboto';
-  font-style: normal;
-  font-weight: 700;
-  font-size: 14px;
-  color: #ffffff;
-}
-
 .address {
   font-size: 14px;
   margin-top: 20px;
 }
-
-/* style do ikonz svg */
-/* .icon {
+ 
+/*                   IKONKI SVG               */
+.icon {
   display: inline-block;
   width: 1em;
   height: 1em;
   stroke-width: 0;
   stroke: currentColor;
   fill: currentColor;
-} */
-
-.category-box {
-  display: flex;
-  width: 1171px;
-  height: 251px;
-  margin: auto;
-}
-
-.category-prezentation {
-  display: flex;
-  width: 270px;
-  height: 247px;
-}
-
-.category-jobs {
-  margin: 20px;
-}
-
-.category-svg-icon {
-  display: block;
-  /* margin: 25px; */
-}
-
-.kafelek {
-  margin: 15px;
-  width: 270px;
-}
-
-.svg-item {
-  background-color: var(--color-white-dark);
-  width: 70px;
-  height: 70px;
-  /* outline: 2px dashed #2a2a2a; */
-  margin: 25px 100px;
-}
-
-/*   na use nie dam rady nic zrobić  
-.use-item {
-  margin: auto;
-} */
-
-.box-info-background {
-  display: block;
-  /* margin-left: 50px;
-  width: 180px;
-  height: 120px; */
-  background-color: var(--color-white-dark);
-}
-
-.box-info-karta {
-}
-
-.socjal-links {
-  display: flex;
-  align-content: space-between;
-  /* width: 250px; */
-  /* height: 40px; */
-  /* background-color: grey; */
-}
-
-.socjal-links-center {
-  align-content: center;
-}
-/*  */
-
-/* za cholere nie moge tego wycentrować  */
-/*  */
-
-.svg-item-socjal {
-  background-color: var(--color-white-dark);
-  width: 30px;
-  height: 30px;
-  margin: 5px;
-  margin-left: 25px;
-  align-content: center;
-  /* outline: 2px dashed #2a2a2a; */
-  /* margin: 25px 100px; */
-}
-.svg-item-socjal-box {
-  background-color: var(--color-white-dark);
-  /* width: 30px;
-  height: 30px; */
-  /* align-content: space-around; */
-  /* outline: 2px dashed #2a2a2a; */
-  /* margin: 25px 100px; */
-}
-
-/* to sobie testuje   */
-
-.list {
-  list-style: none;
-  display: flex;
-  padding: 0px;
-  margin: 0px;
-  gap: 30px;
-}
-.icon-sm-box {
-  display: flex;
-  justify-content: space-between;
-  width: 206px;
-  height: 56px;
-  margin: 0 auto;
-}
-.icon-box-socjal {
-  width: 44px;
-  height: 44px;
-  padding: 12px;
-}
-
-/* to bedzie dobre  do nastepnych ikon */
-/* .svg-client-box-size {
-  align-content: center;
-  justify-content: center;
-  border: 1px solid #afb1b8;
-  border-radius: 4px;
-  width: 170px;
-  height: 92px;
-  padding: 16px 32px;
-  color: #afb1b8;
-} */
-
-/* .svg-icon-client {
-  width: 106px;
-  height: 60px;
-  align-items: center;
-  align-content: center;
-  justify-self: center;
-  color: #afb1b8;
-} */
-
-.icon-client {
-  align-items: center;
-  align-content: center;
-  justify-self: center;
-  color: #afb1b8;
-}
-
-.icon-client::hover {
-  fill: var(--hover-color);
 }
