@@ -38,15 +38,15 @@ img {
   display: block;
 }
 
+.container-nav {
+  width: 1600px;
+  height: 600px;
+}
+
 .container-big {
   width: 1600px;
   height: 600px;
 }
-/* 
-.container-big {
-  margin: 0 auto;
-  height: auto;
-} */
 
 .container {
   margin: 0 auto;
@@ -118,8 +118,7 @@ img {
 }
 
 .margin-agencja {
-  /* padding: 32px; */
-  margin: 32px;
+  padding: 32px;
 }
 
 .margin-bottom {
@@ -165,15 +164,20 @@ img {
 
 .logo-text-blue {
   color: var(--hover-color);
+  font-family: 'Raleway', sans-serif;
+  font-weight: 700;
 }
 
 .list-menu {
+  display: flex;
+  align-items: center;
   padding: 0 24px;
   font-weight: 700;
 }
 
 .navigation {
   text-decoration: none;
+  color: inherit;
   font-size: 14px;
 }
 
@@ -189,7 +193,6 @@ img {
   color: var(--hover-color);
 }
 
-/* nie działa jeszcze  */
 .envelope:hover,
 .phone:hover {
   fill: var(--hover-color);
@@ -199,6 +202,7 @@ img {
   text-decoration: none;
   color: var(--color-grey);
   font-size: 14px;
+  padding-left: 10px;
 }
 
 .kontakt:hover,
@@ -335,7 +339,7 @@ img {
 
 .project-info {
   display: block;
-  color: #212121;
+  color: var(--color-black);
   font-family: 'Roboto';
   font-size: 18px;
   padding-top: 30px;
@@ -415,7 +419,7 @@ h3 {
 
 .category-box {
   display: flex;
-  width: 1171px;
+  max-width: 1200px;
   height: 251px;
   margin: auto;
 }
@@ -444,22 +448,54 @@ h3 {
   background-color: var(--color-white-dark);
   width: 70px;
   height: 70px;
-  /* outline: 2px dashed #2a2a2a; */
+
   margin: 25px 100px;
 }
+.beleczka {
+  display: flex;
+  width: 100%;
+    /* background-color: burlywood; */
+      justify-content: space-between;
+  justify-items: center;
+}
 
-/*   na use nie dam rady nic zrobić  
-.use-item {
-  margin: auto;
-} */
+.beleczka-lorem {
+  justify-content: space-between;
+  justify-items: center;
+  width: 270px;
+}
 
-.box-info-background {
-  display: block;
-  /* margin-left: 50px;
-  width: 180px;
-  height: 120px; */
+.beleczka-kafelek {
+  align-content: center;
+  justify-content: center;
+  border: 2px #afb1b8;
+  border-radius: 4px;
+  color: #afb1b8;
   background-color: var(--color-white-dark);
 }
+.beleczka-.kafelek{
+  border-color: var(--hover-color);
+}
+
+
+
+
+
+.box-info-background {
+  display: flex;
+  background-color: var(--color-white-dark);
+  border-color: #000000;
+  border-radius: 5%;
+  border: var(--hover-color);
+  border: 1px;
+}
+
+/* .border {
+border-radius: 5%;
+border: var(--hover-color);
+border: 1px;
+
+} */
 
 .box-info-karta {
 }
