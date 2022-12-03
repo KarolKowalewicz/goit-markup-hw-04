@@ -5,6 +5,7 @@
   --color-black: #212121;
   --color-white: #ffffff;
   --color-white-dark: #f5f4fa;
+  --color-grey-light: #afb1b8;
   --color-grey: #757575;
   --hover-color: #2196f3;
   --background-color: #e5e5e5;
@@ -13,7 +14,6 @@
 body {
   font-size: 2rem;
   font-family: 'Roboto', 'Raleway', sans-serif;
-  color: var(--color-black);
   color: var(--background-color);
   font-weight: 400;
 }
@@ -71,19 +71,19 @@ img {
   align-items: center;
   gap: 30px;
   padding: 7px;
-  fill: #afb1b8;
+  fill: var(--color-grey-light);
   padding: 8px 7px;
 }
 
 .client-box-size {
   align-content: center;
   justify-content: center;
-  border: 1px solid #afb1b8;
+  border: 1px solid var(--color-grey-light);
   border-radius: 4px;
   width: 170px;
   height: 92px;
   padding: 16px 32px;
-  color: #afb1b8;
+  color: var(--color-grey-light);
 }
 
 .client-box-size:hover {
@@ -170,6 +170,7 @@ img {
 
 .list-menu {
   display: flex;
+  color: var(--color-black);
   align-items: center;
   padding: 0 24px;
   font-weight: 700;
@@ -201,7 +202,9 @@ img {
 .kontakt {
   text-decoration: none;
   color: var(--color-grey);
+  font-weight: 500;
   font-size: 14px;
+  line-height: 1.14;
   padding-left: 10px;
 }
 
@@ -214,7 +217,7 @@ img {
   margin: auto;
   background-color: #2f303a;
   text-align: center;
-  width: 1600px;
+  max-width: 1600px;
   height: 600px;
   color: var(--color-white);
   background-size: cover;
@@ -416,6 +419,19 @@ h3 {
   stroke: currentColor;
   fill: currentColor;
 } */
+.icon {
+  text-decoration: none;
+  border-style: none;
+  background-color: #ffffff;
+  cursor: pointer;
+}
+
+.icon svg:hover,
+.icon svg:focus {
+  fill: #2196f3;
+
+  transition: all 0.2s;
+}
 
 .category-box {
   display: flex;
@@ -444,6 +460,22 @@ h3 {
   width: 270px;
 }
 
+/* .kafelek-border {
+  display: flex;
+  background-color: red);
+  border-color: #000000;
+  border-radius: 5%;
+  border: 1px;
+}
+
+.kafelek-border:hover {
+  display: flex;
+  background-color: red);
+  border-color: #000000;
+  border-radius: 5%;
+  border: 10px;
+} */
+
 .svg-item {
   background-color: var(--color-white-dark);
   width: 70px;
@@ -453,68 +485,52 @@ h3 {
 }
 .beleczka {
   display: flex;
-  width: 100%;
-    /* background-color: burlywood; */
-      justify-content: space-between;
+  /* width: 100%; */
+  justify-content: space-between;
   justify-items: center;
+  flex-wrap: wrap;
+}
+
+.beleczka-info {
+  display: flex;
+  flex-direction: row;
+  gap: 30px;
 }
 
 .beleczka-lorem {
-  justify-content: space-between;
-  justify-items: center;
   width: 270px;
 }
 
 .beleczka-kafelek {
   align-content: center;
   justify-content: center;
-  border: 2px #afb1b8;
+  border: 2px var(--color-grey-light);
   border-radius: 4px;
-  color: #afb1b8;
+  color: var(--color-grey-light);
   background-color: var(--color-white-dark);
 }
-.beleczka-.kafelek{
+
+.beleczka-kafelek:hover {
   border-color: var(--hover-color);
 }
 
-
-
-
-
-.box-info-background {
-  display: flex;
-  background-color: var(--color-white-dark);
-  border-color: #000000;
-  border-radius: 5%;
-  border: var(--hover-color);
-  border: 1px;
+.box-border {
+  border: 2px solid var(--color-white-dark);
+  border-radius: 4px;
 }
 
-/* .border {
-border-radius: 5%;
-border: var(--hover-color);
-border: 1px;
-
-} */
-
-.box-info-karta {
+.box-border:hover {
+  border-color: var(--hover-color);
 }
 
 .socjal-links {
   display: flex;
   align-content: space-between;
-  /* width: 250px; */
-  /* height: 40px; */
-  /* background-color: grey; */
 }
 
 .socjal-links-center {
   align-content: center;
 }
-/*  */
-
-/* za cholere nie moge tego wycentrować  */
-/*  */
 
 .svg-item-socjal {
   background-color: var(--color-white-dark);
@@ -523,19 +539,10 @@ border: 1px;
   margin: 5px;
   margin-left: 25px;
   align-content: center;
-  /* outline: 2px dashed #2a2a2a; */
-  /* margin: 25px 100px; */
 }
 .svg-item-socjal-box {
   background-color: var(--color-white-dark);
-  /* width: 30px;
-  height: 30px; */
-  /* align-content: space-around; */
-  /* outline: 2px dashed #2a2a2a; */
-  /* margin: 25px 100px; */
 }
-
-/* to sobie testuje   */
 
 .list {
   list-style: none;
@@ -582,7 +589,7 @@ border: 1px;
   align-items: center;
   align-content: center;
   justify-self: center;
-  color: #afb1b8;
+  color: var(--color-grey-light);
 }
 
 .icon-client::hover {
