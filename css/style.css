@@ -67,22 +67,19 @@ img {
 .client-box {
   display: flex;
   justify-content: space-between;
-  align-content: center;
   align-items: center;
-  gap: 30px;
-  padding: 7px;
   fill: var(--color-grey-light);
-  padding: 8px 7px;
 }
 
 .client-box-size {
-  align-content: center;
+  /* align-content: center;
   justify-content: center;
+ align-items: center; */
   border: 1px solid var(--color-grey-light);
   border-radius: 4px;
   width: 170px;
   height: 92px;
-  padding: 16px 32px;
+  /* padding: 16px 32px; */
   color: var(--color-grey-light);
 }
 
@@ -229,11 +226,11 @@ img {
 
 .banner-background-team {
   background-color: var(--color-white-dark);
-  /* dlaczego vsc kazał zrobić puste linie w css ? */
+
   display: flex;
   align-items: center;
   justify-content: space-between;
-  /* dlaczego vsc kazał zrobić puste linie w css ? */
+
   color: var(--color-white);
 }
 
@@ -316,8 +313,6 @@ img {
 
 .img-portfolio {
   display: block;
-  /* width: 370px;
-  height: 294px; */
 }
 
 .portfolio-space {
@@ -410,15 +405,6 @@ h3 {
   margin-top: 20px;
 }
 
-/* style do ikonz svg */
-/* .icon {
-  display: inline-block;
-  width: 1em;
-  height: 1em;
-  stroke-width: 0;
-  stroke: currentColor;
-  fill: currentColor;
-} */
 .icon {
   text-decoration: none;
   border-style: none;
@@ -460,22 +446,6 @@ h3 {
   width: 270px;
 }
 
-/* .kafelek-border {
-  display: flex;
-  background-color: red);
-  border-color: #000000;
-  border-radius: 5%;
-  border: 1px;
-}
-
-.kafelek-border:hover {
-  display: flex;
-  background-color: red);
-  border-color: #000000;
-  border-radius: 5%;
-  border: 10px;
-} */
-
 .svg-item {
   background-color: var(--color-white-dark);
   width: 70px;
@@ -485,7 +455,7 @@ h3 {
 }
 .beleczka {
   display: flex;
-  /* width: 100%; */
+
   justify-content: space-between;
   justify-items: center;
   flex-wrap: wrap;
@@ -510,17 +480,9 @@ h3 {
   background-color: var(--color-white-dark);
 }
 
-.beleczka-kafelek:hover {
-  border-color: var(--hover-color);
-}
-
 .box-border {
   border: 2px solid var(--color-white-dark);
   border-radius: 4px;
-}
-
-.box-border:hover {
-  border-color: var(--hover-color);
 }
 
 .socjal-links {
@@ -538,8 +500,28 @@ h3 {
   height: 30px;
   margin: 5px;
   margin-left: 25px;
-  align-content: center;
+  fill: var(--color-grey-light);
 }
+
+.svg-item-socjal:hover {
+  background-color: var(--hover-color);
+  width: 40px;
+  height: 40px;
+  margin: 5px;
+  margin-left: 25px;
+  align-content: center;
+  border-radius: 50%;
+}
+.svg-item-socjal-bg:hover {
+  background-color: var(--hover-color);
+  width: 30px;
+  height: 30px;
+  margin: 5px;
+  margin-left: 25px;
+  align-content: center;
+  border-radius: 50%;
+}
+
 .svg-item-socjal-box {
   background-color: var(--color-white-dark);
 }
@@ -561,37 +543,38 @@ h3 {
 .icon-box-socjal {
   width: 44px;
   height: 44px;
-  padding: 12px;
+  padding: 20px;
 }
 
-/* to bedzie dobre  do nastepnych ikon */
-/* .svg-client-box-size {
-  align-content: center;
-  justify-content: center;
-  border: 1px solid #afb1b8;
-  border-radius: 4px;
-  width: 170px;
-  height: 92px;
-  padding: 16px 32px;
-  color: #afb1b8;
-} */
-
-/* .svg-icon-client {
+.icon-client {
+  display: flex;
   width: 106px;
   height: 60px;
-  align-items: center;
-  align-content: center;
-  justify-self: center;
-  color: #afb1b8;
-} */
-
-.icon-client {
-  align-items: center;
-  align-content: center;
-  justify-self: center;
+ 
+  justify-content: center;
   color: var(--color-grey-light);
 }
 
-.icon-client::hover {
+.icon-client:hover {
   fill: var(--hover-color);
+}
+.center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.icon-sm-footer {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  width: 44px;
+  height: 44px;
+  cursor: pointer;
+}
+
+.icon-sm-footer:hover {
+  fill: #afb1b8;
+  background-color: var(--hover-color);
 }
